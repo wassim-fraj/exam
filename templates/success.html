@@ -1,0 +1,27 @@
+{% extends "./layout.html" %}
+
+{% block main %}
+
+<div>
+    <p class="font-serif my-10 text-5xl text-center">{{time.date}}, {{time.time}}</p>
+
+    <table class="bg-white border-collapse w-full">
+        <tr>
+            <td class="border px-8 py-4">Timezone</td>
+            <td class="border px-8 py-4">{{time.timeZone}}</td>
+        </tr>
+        <tr>
+            <td class="border px-8 py-4">Coordinate (lat/lon)</td>
+            <td class="border px-8 py-4">{{location.lat}} / {{location.lon}}</td>
+        </tr>
+        <tr>
+            <td class="border px-8 py-4">Full Datetime</td>
+            <td class="border px-8 py-4">{{time.dateTime}}</td>
+        </tr>
+        <tr>
+            <td class="border px-8 py-4">Full Address</td>
+            <td class="border px-8 py-4">{{location.display_name}}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

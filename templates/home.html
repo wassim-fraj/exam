@@ -1,0 +1,14 @@
+{% extends "./layout.html" %}
+
+{% block main %}
+<div class="grid place-items-center h-screen">
+    <div>
+        <h1 class="font-serif text-8xl text-center">World Clock</h1>
+        <form action="/search" method="post" class="my-20">
+            
+            <input type="text" name="q" id="input" class="focus:border-indigo-500 w-3/4 p-2 border-2 text-md shadow-sm border-gray-300 rounded-md">
+            <input type="submit" value="Submit" class="inline-flex items-center px-4 py-2 border-2 border-indigo-500 ml-2 bg-indigo-500 hover:bg-indigo-600 text-white text-md rounded-md">
+        </form>
+    </div>
+</div>
+{% endblock %}
